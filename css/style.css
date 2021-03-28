@@ -6638,9 +6638,6 @@ button.bg-dark:focus {
 .mx-4 {
   margin-left: 1.5rem !important; }
 
-.m-5 {
-  margin: 3rem !important; }
-
 .mt-5,
 .my-5 {
   margin-top: 3rem !important; }
@@ -6649,9 +6646,6 @@ button.bg-dark:focus {
 .mx-5 {
   margin-right: 3rem !important; }
 
-.mb-5,
-.my-5 {
-  margin-bottom: 3rem !important; }
 
 .ml-5,
 .mx-5 {
@@ -8991,7 +8985,8 @@ textarea.form-control {
   color: #1a1a1a; }
 
 .contact-section .info {
-  width: 100%; }
+  width: 100%;
+ }
 
 .contact-section .contact-form {
   width: 100%; }
@@ -9264,7 +9259,7 @@ textarea.form-control {
 
 .designer-link a {
   color: #bf9b30;
-} 
+}
 
 btn {
   position: relative;

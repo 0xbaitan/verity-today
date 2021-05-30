@@ -1,0 +1,41 @@
+.carousel-inner > .carousel-item > img {
+  height: 50vh;
+}
+
+.carousel-inner {
+  height: 100vh;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  top: 85%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  opacity: 0.9;
+  background-image: none;
+
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 3.5rem;
+  color: #bf9b30;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 3.5rem;
+  color: #bf9b30;
+}
+
+.carousel-indicators li {
+  background-color: #bf9b30;  
+}
+

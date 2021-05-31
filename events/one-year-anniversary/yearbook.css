@@ -12,10 +12,7 @@
   
   .carousel-indicators li {
     background-color: ghostwhite;
-    height: 1.5rem;
-    width: 1.5rem;
-    border-radius: 100%;
-    margin-right: 0.45rem;
+    height: 0.5rem;
   }
 
   .carousel-control-prev-icon,

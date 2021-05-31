@@ -1,0 +1,9 @@
+{
+  "navigation": [
+    { "option": "Home", "path": "/index.html" },
+    { "option": "About", "path": "/about.html" },
+    { "option": "Categories", "path": "/gateway.html" },
+    { "option": "Contact Us", "path": "/contact.html" },
+    { "option": "Pride", "path": "/events/pride/listing.html"}
+  ]
+}

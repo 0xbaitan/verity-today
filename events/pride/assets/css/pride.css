@@ -1,16 +1,20 @@
-.carousel-inner > .carousel-item > img {
-  height: 50vh;
+body {
+  overflow-x: hidden;
 }
 
-.carousel-inner {
-  height: 100vh;
+.carousel-control-next {
+  position: absolute;
+  margin-right: 0;
+  right: 0;
+  bottom: -750px;
 }
 
-.carousel-control-next,
 .carousel-control-prev {
-  top: 85%;
+  position: absolute;
+  margin-left: 0;
+  left: 0;
+  bottom: -750px;
 }
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 100px;
@@ -18,9 +22,6 @@
   background-size: 100%, 100%;
   opacity: 0.9;
   background-image: none;
-
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
 }
 
 .carousel-control-next-icon:after {
@@ -36,6 +37,29 @@
 }
 
 .carousel-indicators li {
-  background-color: #bf9b30;  
+  background-color: #bf9b30;
 }
 
+.carousel-indicators {
+  position: absolute;
+
+  bottom: 0;
+
+  margin: none;
+}
+
+#colorlib-main {
+  background-color: black;
+
+  overflow-x: hidden;
+}
+
+.carousel-inner {
+  height: 50rem;
+}
+
+@media (min-width: 992px) {
+  body {
+    overflow: hidden;
+  }
+}

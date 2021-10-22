@@ -1,320 +1,1259 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <title>Verity Today</title>
+    <link rel="icon" type="Image" href="logo2.jpg" />
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Title</title>
-    <link rel="icon" href="/img/logo/logo2.jpg" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="/css/animate.css" />
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="/css/owl.carousel.min.css" />
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="/css/all.css" />
-    <!-- flaticon CSS -->
-    <link rel="stylesheet" href="/css/flaticon.css" />
-    <link rel="stylesheet" href="/css/themify-icons.css" />
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="/css/magnific-popup.css" />
-    <!-- swiper CSS -->
-    <link rel="stylesheet" href="/css/slick.css" />
-    <!-- style CSS -->
-    <link rel="stylesheet" href="/css/style.css" />
-    <!-- ADDED CUSTOM CSS -->
-    <link rel="stylesheet" href="/css/pages/index.css" />
+
+    <!-- Font Imports -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet Imports -->
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-169367224-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-169367224-2");
+    </script>
   </head>
 
   <body>
-    <!--::header part start::-->
-    <header class="main_menu home_menu">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-lg-12">
-            <nav class="navbar navbar-expand-lg navbar-light">
-              <a class="navbar-brand" href="/index.html">
-                <img src="/img/logo/logo2_32x32.png" alt="logo"
-              /></a>
-              <button
-                class="navbar-toggler navbar-toggler-color"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="menu_icon"
-                  ><i class="fas fa-bars navbar-toggler-color"></i
-                ></span>
-              </button>
+    <div id="colorlib-page">
+      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
 
-              <div
-                class="collapse navbar-collapse main-menu-item"
-                id="navbarSupportedContent"
-              >
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/about.html">About</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="/our-issues.html">Issues</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="/blog.html"
-                      id="navbarDropdown_3"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Categories
-                    </a>
-                    <div
-                      class="dropdown-menu"
-                      aria-labelledby="navbarDropdown_2"
-                    >
-                      <a class="dropdown-item" href="/the-sciences.html">
-                        The Sciences
-                      </a>
-                      <a class="dropdown-item" href="/the-arts.html">
-                        The Arts
-                      </a>
-                      <a class="dropdown-item" href="/the-affairs.html">
-                        The Affairs
-                      </a>
-                      <a class="dropdown-item" href="/the-sports.html">
-                        The Sports
-                      </a>
-                      <a class="dropdown-item" href="/the-circuit.html">
-                        The Circuit
-                      </a>
-                      <a class="dropdown-item" href="/mental-health.html"
-                        >Mental Health
-                      </a>
-                    </div>
-                  </li>
+      <aside
+        id="colorlib-aside"
+        role="complementary"
+        class="js-fullheight img"
+        style="background-image: url(images/sidebar-bg.jpg)"
+      >
+        <center>
+          <a href="index.html"
+            ><img src="logo2.png" height="170" width="170"
+          /></a>
+        </center>
+        <br />
+        <nav id="colorlib-main-menu" role="navigation">
+          <!--Dynamically Loading Navigation Bar, @see /js/main.js & /data/navigation-bar.json-->
+          <div id="navigation-bar-list"></div>
+        </nav>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="/contact.html">Contact</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="hearer_icon d-flex align-items-center">
-                <a href="https://www.twitter.com/verity.today/"
-                  ><i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://www.instagram.com/verity.today/"
-                  ><i class="fab fa-instagram"></i>
-                </a>
-              </div>
-            </nav>
-          </div>
+        <br /><br />
+
+        <div class="mb-4">
+          <h3>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdYKbGhrDK4vwQ7mIgf5A1HsjCNWl01kVztY9MChfvi3KdRwQ/viewform?usp=sf_link"
+              target="_blank"
+              >Subscribe Now</a
+            >
+          </h3>
+          <p class="pfooter">
+            Click here for the form to subscribe to our newsletter.
+          </p>
         </div>
-      </div>
-    </header>
-    <!-- Header part end-->
 
-    <!-- breadcrumb part start-->
-    <section class="breadcrumb_part">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12"></div>
+        <div class="mb-4">
+          <h4>
+            <a
+              href="https://www.instagram.com/verity.today/?hl=en"
+              target="_blank"
+              >Follow us on Insta</a
+            >
+          </h4>
+          <p class="pfooter">and get regular updates on all things Verity.</p>
+
+          <br /><br />
         </div>
-      </div>
-    </section>
-    <!-- breadcrumb part end-->
-  <!-- Header part end-->
+      </aside>
 
-  <!-- banner part start-->
-  <section class="banner_part">
-    <div class="container">
-      <div class="row justify-content-start">
-        <div class="col-sm-12">
-          <div class="banner_text">
-            <div class="banner_text_iner">
-              <h1>October 2021</h1>
-              <p><i>The Renaissance Issue is out now!</i></p>
-              <a href="about.html" class="btn_1">Explore Now</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 order-1">
-        
-          <div class="banner_img">
-    
-        <img src="/newsletter-issues/2021/october/renaissance-verity-today-october-issue.jpg" alt="#" class="issue-image">
+      <div id="colorlib-main">
+        <section class="ftco-section ftco-no-pt ftco-no-pb bg-dark">
+          <div class="container px-0">
+            <div class="row no-gutters">
 
-          </div></div>
-   
-        
-        </div>
-      </div>
-    </div>
-    
-  </section>
-  <!-- banner part start-->
-
-  <!-- trending item start-->
-  <section class="client_review">
-    <div class="container">
-      <div class="row justify-content-start">
-        <div class="col-sm-12">
-          <h1>Featured Articles</h1>
-          <div class="client_review_slider owl-carousel">
-            <div class="single_client_review">
-              <div class="single_client_img">
-                <img class="client_img featured_article_img" src="/articles/2021/october/social-change/knock-knock-who-s-there-marginalisation/IMG1.jpg" alt="#">
-              </div>
-              <a href="july2021-issue.html" class="btn_carousel">Click here</a>
-              <h5>July 2021</h5>
-            </div>
-            <div class="single_client_review">
-              <div class="single_client_img">
-                <img class="client_img" src="img/issues/june-issue.png" alt="#">
-              </div>
-              <a href="june2021-issue.html" class="btn_carousel">Click here</a>
-              <h5>June 2021</h5>
-            </div>
-            <div class="single_client_review">
-              <div class="single_client_img">
-                <img class="client_img" src="img/issues/may-issue.png" alt="#">
-              </div>
-              <a href="may2021-issue.html" class="btn_carousel">Click here</a>
-              <h5>May 2021</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- trending item end-->
-
-  <!-- Previous Issues -->
-  <!-- <section class="client_review">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-sm-10">
-          <h1>Previous Issues</h1>
-          <div class="client_review_slider owl-carousel">
-            <div class="single_client_review">
-              <div class="single_client_img">
-                <img class="client_img" src="img/issues/july-issue.jpg" alt="#">
-              </div>
-              <a href="july2021-issue.html" class="btn_carousel">Click here</a>
-              <h5>July 2021</h5>
-            </div>
-            <div class="single_client_review">
-              <div class="single_client_img">
-                <img class="client_img" src="img/issues/june-issue.png" alt="#">
-              </div>
-              <a href="june2021-issue.html" class="btn_carousel">Click here</a>
-              <h5>June 2021</h5>
-            </div>
-            <div class="single_client_review">
-              <div class="single_client_img">
-                <img class="client_img" src="img/issues/may-issue.png" alt="#">
-              </div>
-              <a href="may2021-issue.html" class="btn_carousel">Click here</a>
-              <h5>May 2021</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- client review part end -->
-
-
-  <!-- feature part here -->
- 
-  <!-- feature part end -->
-
-  <!-- subscribe part here -->
-  <section class="subscribe_part section_padding">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="subscribe_part_content">
-            <h2>Get updates and all the latest issues!</h2>
-            <p>Subscribe to our newsletter and don't miss on anything.</p>
-            <div class="subscribe_form">
-              <input type="email" placeholder="Enter your mail">
-              <a href="#" class="btn_1">Subscribe</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- subscribe part end -->
-
-  <!--::footer_part start::-->
-  <footer class="footer_part">
-    <div class="footer_iner">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-lg-8">
-            <div class="footer_menu">
-              <div class="footer_logo">
-                <a href="index.html"><img src="img/logo/logo2_32x32.png" alt="#"></a>
-              </div>
-              <div class="footer_menu_item">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="our-issues.html">Issues</a>
-                <a href="contact.html">Contact</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="social_icon">
-           
-              <a href="https://www.instagram.com/verity.today/"><i class="fab fa-instagram"></i></a>
+              <!-- Landing Page -->
              
+
+              <div class="col-md-12 blog-wrap">
+                <div class="row no-gutters align-items-center">
+                  <div
+                    class="col-md-12 img js-fullheight"
+                    style="background-image: url(images/bg.jpg)"
+                  >
+                    <div class="container">
+                      <div
+                        class="row align-items-center justify-content-center"
+                        style="padding-top: 40%"
+                      >
+                        <div class="col-md-7 text-center" data-aos="fade">
+                          <font color="white">Welcome to</font>
+                          <h1
+                            class="mb-4 test"
+                            style="color: #bf9b30; font-weight: bold"
+                          >
+                            Verity Today
+                          </h1>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 blog-wrap">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-md-6" style="z-index: 1">
+                    <div class="text p-md-5 p-4 ftco-animate">
+                      <div
+                        class="headingright"
+                        style="background-color: rgba(30, 30, 30, 1)"
+                      >
+                        <div class="meta-wrap">
+                          <p class="meta">
+                            <span
+                              ><i class="icon-calendar mr-2"></i>July 2021</span
+                            >
+                            <span
+                              ><i class="icon-star mr-2"></i>Business & Economics</span
+                            >
+                          </p>
+                        </div>
+
+                        <h2 class="mb-2">
+                          <a
+                            href="/issues-2021/july-issue/business-and-economics/reclaiming-stolen-lullabies-the-business-genius-of-taylor-swift-s-re-recordings.html"
+                            style="color: #bf9b30"
+                            >Reclaiming Stolen Lullabies: The Business Genius of
+                            Taylor Swift’s Re-recordings</a
+                          >
+                        </h2>
+                        <h4 class="mb-5" style="color: #bf9b30">
+                          Mohan Rajagopal
+                        </h4>
+                      </div>
+                      <br /><br />
+                      <p>
+                        In June 2019, the whole world woke up to the shocking news
+                        that Taylor Swift no longer owned her own music. In a
+                        surprise business move, her former record label, Big Machine
+                        Records, had sold off her entire past discography to private
+                        equity group Ithaca Holdings, founded by talent manager
+                        Scooter Braun...<br /><a
+                          href="/issues-2021/july-issue/business-and-economics/reclaiming-stolen-lullabies-the-business-genius-of-taylor-swift-s-re-recordings.html"
+                          style="color: #bf9b30"
+                        >
+                          Read More <span class="icon-arrow-right small"></span
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 img js-fullheight"
+                    style="
+                      background-image: url(/articles/July2021/BusinessAndEconomics/reclaiming-stolen-lullabies-the-business-genius-of-taylor-s-swift-s-re-recordings/IMG1.jpg);
+                    "
+                  ></div>
+                </div>
+              </div>
+              
+              <div class="col-md-12 blog-wrap">
+                <div class="row no-gutters align-items-center">
+                  <div
+                    class="col-md-6 img js-fullheight"
+                    style="
+                      background-image: url(/articles/July2021/Technology/wwdc-2021/IMG1.webp)
+                    "
+                  ></div>
+
+                  <div class="col-md-6">
+                    <div class="text p-md-5 p-4 ftco-animate">
+                      <div
+                        class="heading"
+                        style="background-color: rgba(30, 30, 30, 1)"
+                      >
+                        <div class="meta-wrap">
+                          <p class="meta">
+                            <span
+                              ><i class="icon-calendar mr-2"></i>July 2021</span
+                            >
+                            <span
+                              ><i class="icon-star mr-2" aria-hidden="true"></i
+                              >Technology</span
+                            >
+                          </p>
+                        </div>
+
+                        <h2 class="mb-2">
+                          <a
+                            href="/issues-2021/july-issue/technology/wwdc-2021.html"
+                            style="color: #bf9b30"
+                            >WWDC 2021</a
+                          >
+                        </h2>
+                        <h4 class="mb-5" style="color: #bf9b30">
+                          Vedant Mohata
+                        </h4>
+                        <!-- <h4 class="mb-5" style="color: #bf9b30"></h4> -->
+                      </div>
+
+                      <br /><br />
+                      <p>
+                        The World Wide Developers Conference (WWDC) that Apple
+                        annually hosts happens to be one of the most-watched and
+                        keenly awaited tech events of the year, with millions
+                        tuning in. 2021 was no different apart from the strict
+                        focus on the upcoming software...<br /><a
+                          href="/issues-2021/july-issue/technology/wwdc-2021.html"
+                          style="color: #bf9b30"
+                          >Read More <span class="icon-arrow-right small"></span
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12 blog-wrap">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-md-6" style="z-index: 1">
+                    <div class="text p-md-5 p-4 ftco-animate">
+                      <div
+                        class="headingright"
+                        style="background-color: rgba(30, 30, 30, 1)"
+                      >
+                        <div class="meta-wrap">
+                          <p class="meta">
+                            <span
+                              ><i class="icon-calendar mr-2"></i>July 2021</span
+                            >
+                            <span
+                              ><i class="icon-star mr-2"></i>Entertainment</span
+                            >
+                          </p>
+                        </div>
+
+                        <h2 class="mb-2">
+                          <a
+                            href="/issues-2021/july-issue/entertainment/olivia-rodrigo-s-sour-a-sweet-debut-into-mainstream-pop.html"
+                            style="color: #bf9b30"
+                            >Olivia Rodrigo’s SOUR: A Sweet Debut Into
+                            Mainstream Pop</a
+                          >
+                        </h2>
+                        <h4 class="mb-5" style="color: #bf9b30">
+                          Mohan Rajagopal
+                        </h4>
+                      </div>
+                      <br /><br />
+                      <p>
+                        Unless you’ve been living under a rock for the past six
+                    months, you probably already know who Olivia Rodrigo is. The
+                    Disney actress starring in ‘High School Musical: The
+                    Musical: The Series’ exploded into fame in January 2021 with
+                    the release of her debut single ‘driver’s license’, which
+                    peaked...<br /><a
+                          href="/issues-2021/july-issue/entertainment/olivia-rodrigo-s-sour-a-sweet-debut-into-mainstream-pop.html"
+                          style="color: #bf9b30"
+                        >
+                          Read More <span class="icon-arrow-right small"></span
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 img js-fullheight"
+                    style="
+                      background-image: url(/articles/July2021/Entertainment/olivia-rodrigo-s-sour-a-sweet-debut-into-mainstream-pop/IMG1.jpg);
+                    "
+                  ></div>
+                </div>
+              </div>
+
+              <div class="col-md-12 blog-wrap">
+                <div class="row no-gutters align-items-center">
+                  <div
+                    class="col-md-6 img js-fullheight"
+                    style="
+                      background-image: url(/articles/July2021/MentalHealth/it-s-all-about-you-eating-disorders-and-the-self/IMG1.jpg)
+                    "
+                  ></div>
+
+                  <div class="col-md-6">
+                    <div class="text p-md-5 p-4 ftco-animate">
+                      <div
+                        class="heading"
+                        style="background-color: rgba(30, 30, 30, 1)"
+                      >
+                        <div class="meta-wrap">
+                          <p class="meta">
+                            <span
+                              ><i class="icon-calendar mr-2"></i>July 2021</span
+                            >
+                            <span
+                              ><i class="icon-star mr-2" aria-hidden="true"></i
+                              >Mental Health</span
+                            >
+                          </p>
+                        </div>
+
+                        <h2 class="mb-2">
+                          <a
+                            href="/issues-2021/july-issue/mental-health/it-s-all-about-you-eating-disorders-and-the-self.html"
+                            style="color: #bf9b30"
+                            >It’s All About You: Eating Disorders and the Self</a
+                          >
+                        </h2>
+                        <h4 class="mb-5" style="color: #bf9b30">
+                          Aarna Garg, Anayaa Agarwal and Tritee Basu
+                        </h4>
+                        <!-- <h4 class="mb-5" style="color: #bf9b30"></h4> -->
+                      </div>
+
+                      <br /><br />
+                      <p>
+                        An underlying feeling that overwhelmingly shapes our
+                        self-image and influences our behaviour could be called
+                        our insecurity. Do you ever find yourself filled with
+                        self-doubt, lack of confidence and uncertainty...<br /><a
+                          href="/issues-2021/july-issue/mental-health/it-s-all-about-you-eating-disorders-and-the-self.html"
+                          style="color: #bf9b30"
+                          >Read More <span class="icon-arrow-right small"></span
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12 blog-wrap">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-md-6" style="z-index: 1">
+                    <div class="text p-md-5 p-4 ftco-animate">
+                      <div
+                        class="headingright"
+                        style="background-color: rgba(30, 30, 30, 1)"
+                      >
+                        <div class="meta-wrap">
+                          <p class="meta">
+                            <span
+                              ><i class="icon-calendar mr-2"></i>July 2021</span
+                            >
+                            <span
+                              ><i class="icon-star mr-2"></i>Social Change</span
+                            >
+                          </p>
+                        </div>
+
+                        <h2 class="mb-2">
+                          <a
+                            href="/issues-2021/july-issue/social-change/ripe-for-anarchy-loves-still.html"
+                            style="color: #bf9b30"
+                            >Ripe for anarchy, loves still </a
+                          >
+                        </h2>
+                        <h4 class="mb-5" style="color: #bf9b30">
+                          Niharika Rajsaha
+                        </h4>
+                      </div>
+                      <br /><br />
+                      <p>
+                        Feminism has had its roots actively intertwined with
+                        queer liberation since the 1960s, influencing each other
+                        as two movements in portraying solidarity in struggle.
+                        They have both fought for the basic right to equality
+                        between people regardless of their gender or sexuality,
+                        trying to curb society’s inherent prejudice against them
+                        and fighting discrimination based on the same...<br /><a
+                          href="/issues-2021/july-issue/social-change/ripe-for-anarchy-loves-still.html"
+                          style="color: #bf9b30"
+                        >
+                          Read More <span class="icon-arrow-right small"></span
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 img js-fullheight"
+                    style="
+                      background-image: url(/articles/July2021/SocialChange/ripe-for-anarchy-loves-still/IMG1.jpg);
+                    "
+                  ></div>
+                </div>
+              </div>
+
+              <div class="col-md-12 blog-wrap">
+                <div class="row no-gutters align-items-center">
+                  <div
+                    class="col-md-6 img js-fullheight"
+                    style="
+                      background-image: url(/articles/July2021/GlobalAffairsAndPolitics/in-the-name-of-god-let-palestine-be-left-alone/IMG1.png);
+                    "
+                  ></div>
+
+                  <div class="col-md-6">
+                    <div class="text p-md-5 p-4 ftco-animate">
+                      <div
+                        class="heading"
+                        style="background-color: rgba(30, 30, 30, 1)"
+                      >
+                        <div class="meta-wrap">
+                          <p class="meta">
+                            <span
+                              ><i class="icon-calendar mr-2"></i>July 2021</span
+                            >
+                            <span
+                              ><i class="icon-star mr-2" aria-hidden="true"></i
+                              >Global Affairs & Politics</span
+                            >
+                          </p>
+                        </div>
+
+                        <h2 class="mb-2">
+                          <a
+                            href="/issues-2021/july-issue/global-affairs-and-politics/in-the-name-of-god-let-palestine-be-left-alone.html"
+                            style="color: #bf9b30"
+                            >“In The Name Of God, Let Palestine Be Left Alone”</a
+                          >
+                        </h2>
+                        <h4 class="mb-5" style="color: #bf9b30">
+                          Priyanka Banerjee
+                        </h4>
+                        <!-- <h4 class="mb-5" style="color: #bf9b30"></h4> -->
+                      </div>
+
+                      <br /><br />
+                      <p>
+                        It took 10 years and over 1.5 million workers to
+                        construct the Suez Canal and it took 1 day and 1 of the
+                        largest container ships to...<br /><a
+                          href="/issues-2021/july-issue/global-affairs-and-politics/in-the-name-of-god-let-palestine-be-left-alone.html"
+                          style="color: #bf9b30"
+                          >Read More <span class="icon-arrow-right small"></span
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12 blog-wrap">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-md-6" style="z-index: 1">
+                    <div class="text p-md-5 p-4 ftco-animate">
+                      <div
+                        class="headingright"
+                        style="background-color: rgba(30, 30, 30, 1)"
+                      >
+                        <div class="meta-wrap">
+                          <p class="meta">
+                            <span
+                              ><i class="icon-calendar mr-2"></i>July 2021</span
+                            >
+                            <span
+                              ><i class="icon-star mr-2" aria-hidden="true"></i
+                              >Creativity</span
+                            >
+                          </p>
+                        </div>
+
+                        <h2 class="mb-2">
+                          <a
+                            href="/issues-2021/july-issue/creativity/ever-yours-vincent.html"
+                            style="color: #bf9b30"
+                            >Ever yours, Vincent</a
+                          >
+                        </h2>
+                        <h4 class="mb-5" style="color: #bf9b30">
+                          Sreemita Mukherjee
+                        </h4>
+                        <!-- <h4 class="mb-5" style="color: #bf9b30"></h4> -->
+                      </div>
+                      <br /><br />
+                      <p>
+                        Vincent presents a type of escape within his sunflowers,
+                        and almond blossoms, his field with irises and night
+                        cafés— one that is sad, beautiful, and lonely. His art
+                        presents a sense of comfort, belonging, and a type of
+                        relatability that remains intact after an entire
+                        century—the experience of loving...<br /><a
+                          href="/issues-2021/july-issue/creativity/ever-yours-vincent.html"
+                          style="color: #bf9b30"
+                        >
+                          Read More <span class="icon-arrow-right small"></span
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 img js-fullheight"
+                    style="
+                      background-image: url(/articles/July2021/Creativity/ever-yours-vincent/IMG1.jpg);
+                    "
+                  ></div>
+                </div>
+              </div>
+              <div class="col-md-12 blog-wrap">
+                <div class="row no-gutters align-items-center">
+                  <div
+                    class="col-md-6 img js-fullheight"
+                    style="
+                      background-image: url(/events/one-year-anniversary/yearbook/1.png);
+                    "
+                  ></div>
+
+                  <div class="col-md-6">
+                    <div class="text p-md-5 p-4 ftco-animate">
+                      <div
+                        class="heading"
+                        style="background-color: rgba(30, 30, 30, 1)"
+                      >
+                        <div class="meta-wrap">
+                          <p class="meta">
+                            <span
+                              ><i class="icon-calendar mr-2"></i>June 2021</span
+                            >
+                            <span
+                              ></i
+                              >🎂
+                            </span>
+                          </p>
+                        </div>
+
+                        <h2 class="mb-2">
+                          <a
+                            href="/events/one-year-anniversary/yearbook.html"
+                            style="color: #bf9b30"
+                            >One Year Anniversary of Verity Today!</a
+                          >
+                        </h2>
+                        <br />
+                        <h4 class="mb-5" style="color: #bf9b30">
+                          From the Verity Today Team with 💛
+                        </h4>
+                        <br /><br />
+                      
+                      </div>
+
+                      <br /><br />
+                      <p>
+                        We're celebrating Verity Today's One Year Anniversary.
+                        365 days of chaos, missing deadlines, cutting corners
+                        and an eventual state of cloud nine. Join us as we
+                        navigate through the precious memories we have created
+                        at Verity Today - crafted and put together by our Social
+                        Media Team into a yearbook of nostalgia!<br /><a
+                          href="/events/one-year-anniversary/yearbook.html"
+                          style="color: #bf9b30"
+                          >Read More <span class="icon-arrow-right small"></span
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+          <br /><br />
+          <div class="row no-gutters align-items-center">
+            <div
+              class="sidebar-box subs-wrap img px-4 py-5"
+              style="background-image: url(images/bg_1.jpg)"
+            >
+              <div class="overlay"></div>
+
+              <h3 class="mb-4 sidebar-heading">Newsletter</h3>
+
+              <p class="mb-4">
+                Subscribe to get regular updates on our publications, activities
+                and more!
+              </p>
+
+              <form
+                action="https://docs.google.com/forms/d/e/1FAIpQLSdYKbGhrDK4vwQ7mIgf5A1HsjCNWl01kVztY9MChfvi3KdRwQ/viewform?usp=sf_link"
+                class="subscribe-form"
+              >
+                <div class="form-group">
+                  <input
+                    type="submit"
+                    value="Subscribe"
+                    class="mt-2 btn btn-white submit"
+                  />
+                </div>
+              </form>
+              <br />
+            </div>
+          </div>
+          <br />
+          <div class="col-md-12 blog-wrap">
+            <div class="row no-gutters align-items-center">
+              <div
+                class="col-md-6 img js-fullheight"
+                style="
+                  background-image: url(articles/HomePage/Mizuki/IMG7.jfif);
+                "
+              ></div>
+
+              <div class="col-md-6">
+                <div class="text p-md-5 p-4 ftco-animate">
+                  <div
+                    class="heading"
+                    style="background-color: rgba(30, 30, 30, 1)"
+                  >
+                    <div class="meta-wrap">
+                      <p class="meta">
+                        <span
+                          ><i class="icon-calendar mr-2"></i>February 2021</span
+                        >
+                        <span><i class="icon-folder-o mr-2"></i>...</span>
+                      </p>
+                    </div>
+
+                    <h2 class="mb-2">
+                      <a href="ArticlePage195.html" style="color: #bf9b30"
+                        >Mizuki</a
+                      >
+                    </h2>
+                    <h4 class="mb-5" style="color: #bf9b30">Shivam Choraria</h4>
+                    <!-- <h4 class="mb-5" style="color: #bf9b30"></h4> -->
+                  </div>
+
+                  <br /><br />
+                  <p>
+                    Mizuki is the new vegan, new age cloud kitchen located at
+                    the heart of the city which right now is the talk of the
+                    town. It is started by 17 years old Shivam choraria who at
+                    this young age has gained inspiration from his travel
+                    experiences around the globe. Cooking was always his passion
+                    since he grew up seeing his...<br /><a
+                      href="ArticlePage195.html"
+                      style="color: #bf9b30"
+                      >Read More <span class="icon-arrow-right small"></span
+                    ></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="row no-gutters align-items-center">
+              <div class="col-md-12 blog-wrap">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-md-6" style="z-index: 1">
+                    <div class="text p-md-5 p-4 ftco-animate">
+                      <div
+                        class="headingright"
+                        style="background-color: rgba(30, 30, 30, 1)"
+                      >
+                        <div class="meta-wrap">
+                          <p class="meta">
+                            <span
+                              ><i class="icon-calendar mr-2"></i>September
+                              2020</span
+                            >
+                            <span><i class="icon-folder-o mr-2"></i>...</span>
+                          </p>
+                        </div>
+
+                        <h2 class="mb-2">
+                          <a href="ArticlePage145.html" style="color: #bf9b30"
+                            >Bullionaire '20, A Lakshmipat Singhania Academy
+                            Business Conclave</a
+                          >
+                        </h2>
+                        <h4 class="mb-5" style="color: #bf9b30">
+                          Pratham Gupta
+                        </h4>
+                        <!-- <h4 class="mb-5" style="color: #bf9b30"></h4> -->
+                      </div>
+                      <br /><br />
+                      <p>
+                        The fifth edition of Bullionaire, the much-awaited
+                        Business Conclave of Lakshmipat Singhania Academy, was
+                        held on the 21st and 22nd of August, 2020. Despite the
+                        virtual barrier, this fest proved to be a huge success,
+                        with seven riveting events.<br /><a
+                          href="ArticlePage145.html"
+                          style="color: #bf9b30"
+                        >
+                          Read More <span class="icon-arrow-right small"></span
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-md-6 img js-fullheight"
+                    style="background-image: url(articles/lsa1.jpeg)"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="col-md-12 blog-wrap">
+                <div class="row no-gutters align-items-center">
+                  <div
+                    class="col-md-6 img js-fullheight"
+                    style="background-image: url(articles/cal.JPG)"
+                  ></div>
+                  <div class="col-md-6">
+                    <div class="text p-md-5 p-4 ftco-animate">
+                      <div
+                        class="heading"
+                        style="background-color: rgba(30, 30, 30, 1)"
+                      >
+                        <div class="meta-wrap">
+                          <p class="meta">
+                            <span
+                              ><i class="icon-calendar mr-2"></i>September
+                              2020</span
+                            >
+                            <span><i class="icon-folder-o mr-2"></i>...</span>
+                          </p>
+                        </div>
+
+                        <h2 class="mb-2">
+                          <a href="ArticlePage144.html" style="color: #bf9b30"
+                            >Cal</a
+                          >
+                        </h2>
+                        <h4 class="mb-5" style="color: #bf9b30">
+                          @calcalcutta
+                        </h4>
+                      </div>
+
+                      <br /><br />
+                      <p>
+                        We started in February 2020 and have been facing immense
+                        limitations ever since due to the COVID-19 situation.
+                        It's been a fun ride since the beginning. We've gained
+                        so much experience in such a brief period of time and
+                        there’s much more to come as we strive forward. I've
+                        been receiving job applications from several NIFT
+                        students showing their enthusiasm to join us and it
+                        really made us feel special and important, it showed
+                        they were approving of us, our style and fashion
+                        statements. <br /><a
+                          href="ArticlePage144.html"
+                          style="color: #bf9b30"
+                        >
+                          Read More <span class="icon-arrow-right small"></span
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 blog-wrap">
+              <div class="row no-gutters align-items-center">
+                <div class="col-md-6" style="z-index: 1">
+                  <div class="text p-md-5 p-4 ftco-animate">
+                    <div
+                      class="headingright"
+                      style="background-color: rgba(30, 30, 30, 1)"
+                    >
+                      <div class="meta-wrap">
+                        <p class="meta">
+                          <span
+                            ><i class="icon-calendar mr-2"></i>September
+                            2020</span
+                          >
+                          <span><i class="icon-folder-o mr-2"></i>...</span>
+                        </p>
+                      </div>
+
+                      <h2 class="mb-2">
+                        <a href="ArticlePage142.html" style="color: #bf9b30"
+                          >Safety 360 in a New Normal</a
+                        >
+                      </h2>
+                      <h4 class="mb-5" style="color: #bf9b30">Megha Lahiri</h4>
+                      <!-- <h4 class="mb-5" style="color: #bf9b30"></h4> -->
+                    </div>
+
+                    <br /><br />
+                    <p>
+                      Breaking new grounds and making a positive difference in
+                      the community is an essential part of Patton Group’s
+                      values. They have risen to the occasion to combat COVID-19
+                      by launching a hygienic handwashing product – the
+                      Contactless Safe Hand Wash Station. We got a chance to
+                      speak with the person behind this unique safety
+                      initiative, Preeyam Budhia (President – Business
+                      Development, Patton Group).<br /><a
+                        href="ArticlePage142.html"
+                        style="color: #bf9b30"
+                      >
+                        Read More <span class="icon-arrow-right small"></span
+                      ></a>
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="col-md-6 img js-fullheight"
+                  style="
+                    background-image: url(articles/InFrame_1598266319253.jpg);
+                  "
+                ></div>
+              </div>
+            </div>
+
+            <div class="row no-gutters align-items-center">
+              <div class="col-md-12 blog-wrap">
+                <div class="row no-gutters align-items-center">
+                  <div
+                    class="col-md-6 img js-fullheight"
+                    style="background-image: url(articles/Fiery%20Noodles.jpg)"
+                  ></div>
+                  <div class="col-md-6">
+                    <div class="text p-md-5 p-4 ftco-animate">
+                      <div
+                        class="headingright"
+                        style="background-color: rgba(30, 30, 30, 1)"
+                      >
+                        <div class="meta-wrap">
+                          <p class="meta">
+                            <span
+                              ><i class="icon-calendar mr-2"></i>September
+                              2020</span
+                            >
+                            <span><i class="icon-folder-o mr-2"></i>...</span>
+                          </p>
+                        </div>
+
+                        <h2 class="mb-2">
+                          <a href="ArticlePage143.html" style="color: #bf9b30"
+                            >Fiery Lo-mein</a
+                          >
+                        </h2>
+                        <h4 class="mb-5" style="color: #bf9b30">
+                          @platesaroundyou<br />@harshitbajoria_
+                        </h4>
+                      </div>
+
+                      <br /><br />
+                      <p>
+                        Working overseas over the summer, my sleep schedule
+                        changed to that of the US time- zone. Often at night, I
+                        was starving at 2am and did not know what to eat. One
+                        night. I decided to make Pad Thai noodles, with a twist.
+                        I decided to add a few different sauces and spices and
+                        boom it turned out to be the best dish I made. I was
+                        super happy about this and thought I’d share it with the
+                        world. Thanks to Devika it was possible.<br /><a
+                          href="ArticlePage143.html"
+                          style="color: #bf9b30"
+                        >
+                          Read More <span class="icon-arrow-right small"></span
+                        ></a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row no-gutters">
+              <div class="col-md-4 d-flex">
+                <div class="blog-entry ftco-animate">
+                  <a
+                    href="ArticlePage94.html"
+                    class="img"
+                    style="background-image: url(articles/article47.jpg)"
+                  ></a>
+                  <div class="text p-4">
+                    <h3 class="mb-2">
+                      <a href="ArticlePage94.html">IT'S OK NOT TO BE OK</a>
+                    </h3>
+                    <div class="meta-wrap">
+                      <p class="meta">
+                        <span
+                          ><i class="icon-calendar mr-2"></i>August 1,
+                          2020</span
+                        >
+                      </p>
+                    </div>
+                    <p class="mb-0">
+                      Tell us about Caring Minds. Understanding and accepting
+                      ourselves as we are is the key to living a healthy life.
+                      And sometimes we need help and guidance to do this....
+                    </p>
+                    <p>
+                      <a href="ArticlePage94.html" class="discover">
+                        Read More <span class="icon-arrow-right small"></span
+                      ></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 d-flex">
+                <div class="blog-entry ftco-animate">
+                  <a
+                    href="ArticlePage95.html"
+                    class="img"
+                    style="background-image: url(articles/korean_peninsula.jpg)"
+                  ></a>
+                  <div class="text p-4">
+                    <h3 class="mb-2">
+                      <a href="ArticlePage95.html"
+                        >THE IMPENDING FATE OF THE KOREAN PENINSULA</a
+                      >
+                    </h3>
+                    <div class="meta-wrap">
+                      <p class="meta">
+                        <span
+                          ><i class="icon-calendar mr-2"></i>August 1,
+                          2020</span
+                        >
+                      </p>
+                    </div>
+                    <p class="mb-0">
+                      On Tuesday 16 th June 2020 at 05:49 GMT, North Korea blew
+                      up its joint liaison office with South Korea in Kaesong,
+                      an industrial township on its side of the border in an
+                      alarming and a serious incident...
+                    </p>
+                    <p>
+                      <a href="ArticlePage95.html" class="discover">
+                        Read More <span class="icon-arrow-right small"></span
+                      ></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 d-flex">
+                <div class="blog-entry ftco-animate">
+                  <a
+                    href="ArticlePage96.html"
+                    class="img"
+                    style="background-image: url(articles/GNOOCHI.jpg)"
+                  ></a>
+                  <div class="text p-4">
+                    <h3 class="mb-2">
+                      <a href="ArticlePage96.html">ESTALAVISTAA</a>
+                    </h3>
+                    <div class="meta-wrap">
+                      <p class="meta">
+                        <span
+                          ><i class="icon-calendar mr-2"></i>August 1,
+                          2020</span
+                        >
+                      </p>
+                    </div>
+                    <p class="mb-0">
+                      For the gnocchi: <br />
+                      2 cups boiled sweet potato<br />
+                      1/2 cup rolled oats <br />
+                      1/4 cup potato starch <br />
+                      1/2 tsp baking powder <br />
+                      1/2 tsp sea salt ...
+                    </p>
+                    <p>
+                      <a href="ArticlePage96.html" class="discover">
+                        Read More <span class="icon-arrow-right small"></span
+                      ></a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Footer -->
+              <footer
+                class="site-footer footer-contents"
+                style="background-color: rgba(20, 20, 20, 1)"
+              >
+                <div class="container" style="padding-left: 50px">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3 class="footer-heading mb-2 text-white">About Us</h3>
+                      <p class="renormal">
+                        A little something for everyone. We're an online
+                        newsletter trying to make a difference and bring about
+                        recognition to different worldly issues
+                      </p>
+                      <center>
+                        Website created by<br />
+                        <span class="designer-link"
+                          ><a
+                            class="designer-link"
+                            href="https://instagram.com/_notvansh_10"
+                            target="_blank"
+                            >Vansh Bothra</a
+                          ></span
+                        >,<br /><span class="designer-link"
+                          ><a
+                            class="designer-link"
+                            href="https://instagram.com/anshuman_sarda"
+                            target="_blank"
+                            >Anshuman Sarda</a
+                          ></span
+                        >
+                      </center>
+                      <br />
+                    </div>
+
+                    <div class="col-md-6 pt-0 mt-0 text-center">
+                      <div>
+                        <p>
+                          <!-- <a href="https://www.facebook.com/OpenHouse-Model-United-Nations-111436327267224/" target="_blank" class="pb-0 pr-10 pl-0"><span class="icon-facebook-f icon-size" style="padding-right: 10px"></span></a> -->
+                          <a
+                            href="https://www.instagram.com/verity.today/?hl=en"
+                            target="_blank"
+                            class="pb-0 pr-10 pl-0"
+                            ><span
+                              class="icon-instagram icon-size"
+                              style="padding-right: 15px"
+                            ></span></a
+                          ><br /><br /><br /><br />
+
+                          Website managed by <br /><span class="designer-link"
+                            ><a
+                              class="designer-link"
+                              href="https://www.instagram.com/that_renaissance_kid/"
+                              target="_blank"
+                              >Divyansh Gupta</a
+                            ></span
+                          >,
+                          <span class="designer-link"
+                            ><a
+                              class="designer-link"
+                              href="https://instagram.com/_techy._.bhavya_"
+                              target="_blank"
+                              >Bhavya Choudhary</a
+                            ></span
+                          >,
+                          <span class="designer-link"
+                            ><a
+                              class="designer-link"
+                              href="https://instagram.com/_notvansh_10"
+                              target="_blank"
+                              >Vansh Bothra</a
+                            ></span
+                          >,<br />
+                          <span class="designer-link"
+                            ><a
+                              class="designer-link"
+                              href="https://instagram.com/anshuman_sarda"
+                              target="_blank"
+                              >Anshuman Sarda</a
+                            ></span
+                          >,
+                          <span class="designer-link"
+                            ><a
+                              class="designer-link"
+                              href="https://instagram.com/kushal_mundra26"
+                              target="_blank"
+                              >Kushal Mundra</a
+                            ></span
+                          >,
+                          <span class="designer-link"
+                            ><a
+                              class="designer-link"
+                              href="https://instagram.com/karnavpopat"
+                              target="_blank"
+                              >Karnav Popat</a
+                            ></span
+                          ><br />
+                          Copyright &copy;
+                          <script>
+                            document.write(new Date().getFullYear());
+                          </script>
+                          | Verity Today
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+              <!-- End of Footer -->
+            </div>
+          </div>
+        </section>
       </div>
+      <!-- END COLORLIB-MAIN -->
+    </div>
+    <!-- END COLORLIB-PAGE -->
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle
+          class="path-bg"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke="#eeeeee"
+        />
+        <circle
+          class="path"
+          cx="24"
+          cy="24"
+          r="22"
+          fill="none"
+          stroke-width="4"
+          stroke-miterlimit="10"
+          stroke="#F96D00"
+        />
+      </svg>
     </div>
 
-    
-  </footer>
-  <!--::footer_part end::-->
-
-  <!-- jquery plugins here-->
-  <script src="js/jquery-1.12.1.min.js"></script>
-  <!-- popper js -->
-  <script src="js/popper.min.js"></script>
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.min.js"></script>
-  <!-- magnific popup js -->
-  <script src="js/jquery.magnific-popup.js"></script>
-  <!-- carousel js -->
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.nice-select.min.js"></script>
-  <!-- slick js -->
-  <script src="js/slick.min.js"></script>
-  <script src="js/jquery.counterup.min.js"></script>
-  <script src="js/waypoints.min.js"></script>
-  <script src="js/contact.js"></script>
-  <script src="js/jquery.ajaxchimp.min.js"></script>
-  <script src="js/jquery.form.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/mail-script.js"></script>
-  <!-- custom js -->
-  <script src="js/custom.js"></script>
-  <script src="js/pages/slideshow.js"></script>
-</body>
-
+  <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/js/load.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.easing.1.3.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/jquery.stellar.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/jquery.animateNumber.min.js"></script>
+    <script src="/js/scrollax.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
+
+<!-- 
+
+	PIC-RIGHT ALIGNMENT TEMPLATE:
+
+	-------------------------------------
+
+	     <div class="col-md-12 blog-wrap">
+                <div class="row no-gutters align-items-center">
+                  <div
+                    class="col-md-6 img js-fullheight"
+                    style="
+                      background-image: url({{URL}});
+                    "
+                  ></div>
+                  <div class="col-md-6">
+                    <div class="text p-md-5 p-4 ftco-animate">
+                      <div
+                        class="heading"
+                        style="background-color: rgba(30, 30, 30, 1)"
+                      >
+                        <div class="meta-wrap">
+                          <p class="meta">
+                            <span
+                              ><i class="icon-calendar mr-2"></i>{{DATE}}</span
+                            >
+                            <span><i class="icon-folder-o mr-2"></i>{{DEPARTMENT}}</span>
+                          </p>
+                        </div>
+                        <h2 class="mb-2">
+                          <a href="{{PAGE URL}}" style="color: #bf9b30"
+                            >{{TITLE}}</a
+                          >
+                        </h2>
+                        <h4 class="mb-5" style="color: #bf9b30">
+                          {{AUTHOR}}
+                        </h4>
+					</div>
+					<br /><br />
+					<p>
+						{{TEXT}}...<br /><a
+						href="{{PAGE URL}}"
+						style="color: #bf9b30"
+						>Read More <span class="icon-arrow-right small"></span
+					  ></a>
+					</p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+
+	-------------------------------------
+
+
+	PIC-LEFT ALIGNMENT TEMPLATE:
+
+	-------------------------------------
+
+	   <div class="col-md-12 blog-wrap">
+                <div class="row no-gutters align-items-center">
+                  <div class="col-md-6" style="z-index: 1">
+                    <div class="text p-md-5 p-4 ftco-animate">
+                      <div
+                        class="headingright"
+                        style="background-color: rgba(30, 30, 30, 1)"
+                      >
+                        <div class="meta-wrap">
+                          <p class="meta">
+                            <span
+                              ><i class="icon-calendar mr-2"></i>{{DATE}}</span
+                            >
+                            <span><i class="icon-folder-o mr-2"></i>{{DEPARTMENT}}</span>
+                          </p>
+                        </div>
+
+                        <h2 class="mb-2">
+                          <a href="{{PAGE URL}}" style="color: #bf9b30"
+                            >{{TITLE}}</a
+                          >
+                        </h2>
+                        <h4 class="mb-5" style="color: #bf9b30">
+                        {{AUTHOR}}
+                        </h4>
+        
+					</div>
+					<br /><br />
+					<p>
+					{{TEXT}}<br /><a
+						href="{{PAGE URL}}"
+						style="color: #bf9b30"
+					  >
+						Read More <span class="icon-arrow-right small"></span
+					  ></a>
+					</p>
+				  </div>
+				</div>
+				<div
+				  class="col-md-6 img js-fullheight"
+				  style="background-image: url({{URL}})"
+				></div>
+			  </div>
+			</div>
+	
+	-------------------------------------
+
+-->

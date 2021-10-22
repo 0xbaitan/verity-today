@@ -1,0 +1,127 @@
+.breadcrumb_part {
+  background-image: url(/img/essentials/cover/mystical_chakra.jpg);
+  background-size: 1600px;
+  background-position: 25% 30%;
+  height: 240px;
+}
+
+
+.banner_part {
+
+  height: 720px;
+ 
+}
+
+.banner_img {
+  margin-right: 5em;
+}
+
+.banner_img > .issue-image {
+  max-height: 1200px;
+
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  
+  .banner_img > .issue-image {
+    max-height: 120px;
+  }
+}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+/** NAVIGATION BAR START */
+
+.main_menu .home_menu .menu_fixed {
+  background-color: black;
+}
+
+
+                   
+.main_menu .main-menu-item ul li .nav-link:hover {
+  text-shadow: none;
+}
+
+.navbar {
+  background-color: black;
+}
+.navbar-collapse {
+  background-color: black;
+}
+
+.home_menu {
+  background-color: black;
+}
+
+ 
+ .nav-link {
+ color: #dfc98c!important;
+}
+
+.navbar-light .navbar-toggler{
+  color:#dfc98c !important;
+}
+
+.navbar-toggler-color {
+  color: #dfc98c !important;
+}
+
+.dropdown .dropdown-item:hover {
+  color: black !important;
+}
+
+.footer_part .social_icon > a:hover {
+  background-color: black;
+
+}
+
+/** NAVIGATION BAR END */
+
+
+.events-item img {
+  min-height: 400px;
+  max-height: 480px;
+}
+
+.events-carousel-control-prev, .events-carousel-control-next {
+  color: black;
+
+}
+
+body {
+  width: 100%;
+}
+
+/** NEWSLETTER PART */
+
+.issue-image {
+  position: relative;
+  top: 5.5rem;
+  max-height: 600px;
+  max-width: 350px;
+}
+
+.banner_text {
+  position: relative;
+  top: -2.5rem;
+}
+
+/** FEATURED ARTICLES SECTION */
+
+.featured_article_img {
+  min-height: 384px;
+  min-width: 480px;
+  max-height: 384px;
+  max-width: 480px;
+}

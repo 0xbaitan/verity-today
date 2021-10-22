@@ -1,0 +1,99 @@
+
+.breadcrumb_part {
+  background-image: url(/img/essentials/cover/mystical_chakra.jpg);
+  background-size: 1600px;
+  background-position: 25% 30%;
+  height: 360px;
+}
+
+
+body > section.blog_area.single-post-area.section_padding > div > div > div.col-lg-4 > div > aside.single_sidebar_widget.post_category_widget > h4 {
+  color: black;
+}
+
+
+/************* TYPOGRAPHY START ************/
+
+.heading {
+  font-size: 1.5rem !important;
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/************* TYPOGRAPHY END ************/
+
+
+.main_menu .home_menu .menu_fixed {
+  background-color: black;
+}
+
+
+                   
+.main_menu .main-menu-item ul li .nav-link:hover {
+  text-shadow: none;
+}
+
+.navbar {
+  background-color: black;
+}
+.navbar-collapse {
+  background-color: black;
+}
+
+.home_menu {
+  background-color: black;
+}
+
+ 
+ .nav-link {
+ color: #dfc98c!important;
+}
+
+.navbar-light .navbar-toggler{
+  color:#dfc98c !important;
+}
+
+.navbar-toggler-color {
+  color: #dfc98c !important;
+}
+
+.dropdown .dropdown-item:hover {
+  color: black !important;
+}
+
+.footer_part .social_icon > a:hover {
+  background-color: black;
+  color:  #dfc98c;
+}
+
+/** SIDE PANE */
+
+.single_sidebar_widget, .blog-author {
+background-color: #F7F7F7 !important;
+}
+
+/** UTILITY CLASSES */
+
+.disabled {
+  pointer-events: none;
+}
+
+.space-top-bottom-3 {
+  position: relative;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.sciences-bg {
+  background-image: url(/img/covers/cover.jpeg);
+  background-size: 1200px;
+  background-position: 0% 0%;
+  height: 360px;
+}

@@ -5,11 +5,32 @@
   height: 240px;
 }
 
+.newsletter_section {
+  background-color: white;
+}
+
+.issue_year_month {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #dfc98c;
+}
+
+.issue_description {
+  position: relative;
+  top: 0.25em;
+  color: white;
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 0) and (max-width: 991px) {
+  .issue_info {
+    margin-top: 2em;
+  }
+}
 
 .banner_part {
-
-  height: 720px;
- 
+  position: relative;
+  top: 2em;
 }
 
 .banner_img {
@@ -17,29 +38,24 @@
 }
 
 .banner_img > .issue-image {
-  max-height: 1200px;
+  max-height: 200px;
+}
 
+.issue_img {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 95%;
+  max-height: 95%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-  
   .banner_img > .issue-image {
     max-height: 120px;
   }
 }
-
-/* Medium and up */
-@media screen and (min-width: 40em) {}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
-
-/* Large and up */
-@media screen and (min-width: 64em) {}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
 
 /** NAVIGATION BAR START */
 
@@ -47,8 +63,6 @@
   background-color: black;
 }
 
-
-                   
 .main_menu .main-menu-item ul li .nav-link:hover {
   text-shadow: none;
 }
@@ -64,13 +78,12 @@
   background-color: black;
 }
 
- 
- .nav-link {
- color: #dfc98c!important;
+.nav-link {
+  color: #dfc98c !important;
 }
 
-.navbar-light .navbar-toggler{
-  color:#dfc98c !important;
+.navbar-light .navbar-toggler {
+  color: #dfc98c !important;
 }
 
 .navbar-toggler-color {
@@ -83,20 +96,18 @@
 
 .footer_part .social_icon > a:hover {
   background-color: black;
-
 }
 
 /** NAVIGATION BAR END */
-
 
 .events-item img {
   min-height: 400px;
   max-height: 480px;
 }
 
-.events-carousel-control-prev, .events-carousel-control-next {
+.events-carousel-control-prev,
+.events-carousel-control-next {
   color: black;
-
 }
 
 body {
@@ -107,21 +118,173 @@ body {
 
 .issue-image {
   position: relative;
-  top: 5.5rem;
+  top: 5.5em;
   max-height: 600px;
   max-width: 350px;
 }
 
 .banner_text {
   position: relative;
-  top: -2.5rem;
+  top: -2.5em;
 }
 
 /** FEATURED ARTICLES SECTION */
 
-.featured_article_img {
-  min-height: 384px;
-  min-width: 480px;
-  max-height: 384px;
-  max-width: 480px;
+.featured_article_slide {
+  margin: 0 0;
+  padding: 0 0;
+  background-color: black;
 }
+
+.featured_article_img_section {
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.featured_article_caption {
+  margin: 2em;
+  margin-right: 4em;
+  color: white;
+  font-style: italic;
+  font-size: 1.15rem;
+}
+
+.featured_article_title {
+  font-size: 1.35rem;
+  font-weight: bold;
+  color: white;
+}
+
+.featured_article_author {
+  position: relative;
+  top: 0.25em;
+  color: white;
+  font-size: 1.15rem;
+}
+.featured_article_meta_data {
+  color: white;
+  position: relative;
+  top: 0.25em;
+}
+
+.featured_article_img {
+  min-height: 440px;
+  min-width: 100%;
+  max-height: 440px;
+  max-width: 100%;
+}
+
+.featured_article_button {
+  position: relative;
+  top: 2em;
+  background-color: black;
+  color: #dfc98c;
+  border-color: #dfc98c;
+}
+
+.featured_article_button:hover {
+  background-color: #dfc98c;
+  color: black;
+  border-color: black;
+}
+
+@media (min-width: 0) and (max-width: 1199px) {
+  .featured_article_button {
+    position: relative;
+    margin-bottom: 5em;
+  }
+}
+/* TYPOGRAPHY */
+
+.italic {
+  font-style: italic;
+}
+
+.featured_next,
+.featured_prev {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: black;
+  font-weight: bold;
+  color: #dfc98c;
+  font-size: 1.4rem;
+  border-color: #dfc98c;
+  border-width: 3px;
+  border-style: groove;
+}
+
+.featured_next::after {
+  content: ">";
+}
+
+.featured_prev::after {
+  content: "<";
+}
+
+.featured_articles_nav {
+  position: relative;
+  top: 2em;
+}
+
+@media (min-width: 0) and (max-width: 992px) {
+  .featured_next,
+  .featured_prev {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+@media (min-width: 0) and (max-width: 420px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+/** CATEGORY PAGES */
+
+.blog_details {
+  background-color: black;
+}
+
+.blog_details p {
+  color: white;
+}
+
+.blog_details h2 {
+  color: white;
+}
+
+.blog-info-link > li {
+  color: #dfc98c;
+}
+
+.blog-info-link > li > a {
+  color: #dfc98c !important;
+}
+
+i::before {
+  color: #dfc98c;
+}
+
+.card-img {
+  max-height: 480px;
+}
+
+/** CONTACT US PAGE */
+.form-cotact-button {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+.form-cotact-button:hover {
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+

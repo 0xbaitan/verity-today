@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <set issue-month="October" issue-year="2021">
+        <featuredarticle >
+            <title> Knock Knock, Who’s There? Marginalisation.</title>
+            <excerpt> "They want acceptance. And above all, they want to own their land, and not live in fear of the next authoritarian development they will be subjected to."</excerpt>
+            <author>Pragya Roy Barman</author>
+            <date>16th October, 2021</date>
+            <category>Social Change</category>
+            <imgpath>/articles/2021/october/social-change/knock-knock-who-s-there-marginalisation/IMG1.jpg</imgpath>
+            <articlepath>/issues/2021/october/social-change/knock-knock-who-s-there-marginalisation.html
+            </articlepath>
+        </featuredarticle>
+
+        <featuredarticle >
+            <title> Knock</title>
+            <excerpt> "They want acceptance. And above all, they want to own their land, and not live in fear of the next authoritarian development they will be subjected to."</excerpt>
+            <author>Pragya Roy Barman</author>
+            <date>16th October, 2021</date>
+            <category>Social Change</category>
+            <imgpath>/articles/2021/october/social-change/knock-knock-who-s-there-marginalisation/IMG1.jpg</imgpath>
+            <articlepath>/issues/2021/october/social-change/knock-knock-who-s-there-marginalisation.html
+            </articlepath>
+        </featuredarticle>
+
+        <featuredarticle >
+            <title> Knocks</title>
+            <excerpt> "They want acceptance. And above all, they want to own their land, and not live in fear of the next authoritarian development they will be subjected to."</excerpt>
+            <author>Pragya Roy Barman</author>
+            <date>16th October, 2021</date>
+            <category>Social Change</category>
+            <imgpath>/articles/2021/october/social-change/knock-knock-who-s-there-marginalisation/IMG1.jpg</imgpath>
+            <articlepath>/issues/2021/october/social-change/knock-knock-who-s-there-marginalisation.html
+            </articlepath>
+        </featuredarticle>
+    </set>
+
+    
+</root>

@@ -97,3 +97,15 @@ background-color: #F7F7F7 !important;
   background-position: 0% 0%;
   height: 360px;
 }
+
+.blog-info-link > li {
+  color: #dfc98c;
+}
+
+.blog-info-link > li > a {
+  color: #dfc98c !important;
+}
+
+i::before {
+  color: #dfc98c;
+}

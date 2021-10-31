@@ -1,4 +1,11 @@
 .breadcrumb_part {
+  background-image: url(/img/essentials/cover/temp_category_cover.png);
+  background-size: 1600px;
+  background-position: 25% 30%;
+  height: 60px;
+}
+
+ .homepage {
   background-image: url(/img/essentials/cover/mystical_chakra.jpg);
   background-size: 1600px;
   background-position: 25% 30%;

@@ -1,5 +1,6 @@
 $(document).ready(function () {
   loadXML("/data/navigation-bar.xml");
+  $(".fa-twitter").css("display", "none");
 });
 
 function loadXML(filepath) {

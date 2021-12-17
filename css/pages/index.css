@@ -5,7 +5,7 @@
   height: 60px;
 }
 
- .homepage {
+.homepage {
   background-image: url(/img/essentials/cover/mystical_chakra.jpg);
   background-size: 1600px;
   background-position: 25% 30%;
@@ -295,3 +295,17 @@ i::before {
   border-color: white;
 }
 
+.issues-card {
+  min-height: 800px;
+  height: 800px;
+  max-height: 800px;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .issues-card {
+    min-height: 160px;
+    height: 160px;
+    max-height: 160px;
+  }
+}

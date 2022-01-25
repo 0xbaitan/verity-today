@@ -1,0 +1,27 @@
+.panel-heading {
+    position: relative;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.panel-collapse {
+background-color: white;
+}
+
+hr.divider {
+    border-top: 1px solid grey;
+  }
+
+.black {
+    color: black !important;
+}
+
+.m-left-2 {
+    margin-left: 2rem;
+}
+
+h4.panel-title {
+    font-size: 32px;
+    color: #666666;
+}
